@@ -1,0 +1,304 @@
+body {
+  background-color: #f8f9fa;
+}
+.app-logo-sm {
+  width: 30px;
+  padding-right: 10px;
+  margin-right: 5px;
+}
+.app-logo-md {
+  width: 40px;
+}
+.wrapper {
+  margin-top: 80px;
+}
+.bg-gradient {
+  background-image: linear-gradient(to right,teal, navy);
+}
+.navbar {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,.05), inset 0 -1px 0 rgba(0,0,0,.1);
+  font-weight: 500;
+}
+.form-control:disabled, .form-control[readonly],
+.form-control, 
+.custom-file-label {
+  border: 2px solid #f1f2f3;
+  background-color: #f1f2f3;
+  border-radius: .35rem;
+}
+.navbar-toggler {
+  border: 0;
+}
+.navbar-toggler:focus,
+.form-control:focus,
+.btn:focus,
+.custom-control-input:checked~.custom-control-label::before,
+.custom-switch .custom-control-label::before {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.form-control:focus {
+  border: 2px solid #eceded;
+  background-color: transparent;
+}
+label, .font-weight-custom {
+  font-weight: 500;
+}
+.no-action, .inactive, .active {
+  pointer-events: none;
+}
+.inactive {
+  opacity: 0.5;
+}
+.btn {
+  border-width: 2px;
+  border-radius: .75rem;
+}
+.btn, .form-control, .inactive {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+}
+.btn:hover {
+  opacity: 0.8;
+  color: #fff;
+}
+.form-control:disabled, .form-control[readonly],
+.btn[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.custom-control-label::before {
+  background-color: #f2f2f2;
+  border: #f2f2f2 solid 1px;
+}
+.nav-pills .nav-link {
+  font-weight: 500;
+}
+.nav-pills .nav-link.active {
+  border-radius: 1.25rem;
+  padding-right: 1.5rem!important;
+  padding-left: 1.5rem!important;
+}
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+  border-color: #f2f2f2 !important;
+}
+.bg-navy, .btn-primary, .btn-outline-primary:hover, .btn-primary.disabled, .btn-primary:disabled {
+  border-color: navy;
+  background-color: navy;
+  color: #fff;
+}
+.btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled {
+  border-color: navy;
+  color: navy;
+}
+.btn-outline-secondary, .btn-outline-secondary.disabled, .btn-outline-secondary:disabled {
+  border-color: teal;
+  color: teal;
+}
+.bg-teal, .btn-secondary, .btn-outline-secondary:hover, .btn-secondary.disabled, .btn-secondary:disabled {
+  border-color: teal;
+  background-color: teal;
+  color: #fff;
+}
+.custom-control-input:checked~.custom-control-label::before, 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  border-color: teal;
+  background-color: teal;
+}
+.selected {
+  border-left: 5px solid navy !important;
+}
+.clickable {
+  cursor: pointer;
+}
+.placeholder {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid transparent;
+}
+.placeholder-sm {
+  width: 40px;
+  height: 40px;
+  font-size: 0.8rem;
+}
+.placeholder-md {
+  font-size: 0.9rem;
+}
+.placeholder-lg {
+  font-size: 1.2rem;
+}
+.placeholder-list {
+  margin-left: -10px;
+  border: 3px solid #fff;
+}
+.placeholder-list:first-child {
+  margin-left: 0;
+}
+.image-cover {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  background-size: "cover";
+  background-repeat: "no-repeat";
+  background-position: "center";
+  background-color: teal;
+}
+.card-image-cover {
+  height: 180px;
+}
+.image-cover-md, .placeholder-md {
+  height: 50px;
+  width: 50px;
+}
+a {
+  color: rgb(42, 42, 42);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+}
+.table td, .table th {
+  vertical-align: middle;
+}
+.badge-pill { 
+  padding: 0.5em 1em !important;
+}
+.card {
+  box-shadow: 0 2px 0 rgba(0,0,0,0.06);
+}
+.alert {
+  border: 0;
+  border-left: 4px solid;
+}
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: rgba(100,107,131,.4);
+  transition: opacity .3s ease;
+}
+.dialog-wrapper {
+  position: relative;
+  margin: 5rem auto;
+  pointer-events: none;
+  max-width: 95%;
+}
+.dialog-md {
+  width: 650px;
+}
+.dialog-sm {
+  width: 500px;
+}
+.dialog-container {
+  position: relative;
+  width: 100%;
+  pointer-events: auto;
+  transition: all .3s ease;
+  box-shadow: 0 12px 48px 0 rgba(96,101,123,.24);
+}
+.rounded-top {
+  border-top-left-radius: .5rem!important;
+  border-top-right-radius: .5rem!important;
+}
+.rounded-bottom {
+  border-bottom-right-radius: .5rem!important;
+  border-bottom-left-radius: .5rem!important;
+}
+@keyframes circleSpinner {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate(0, 20px);
+    -webkit-transform: translate(0, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+  }
+}
+@keyframes modalShow {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+.dialog-wrapper {
+  animation-name: modalShow;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+}
+.card:not(.noAnimation), .fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+}
+.spinner {
+  border-radius: 50%;
+  border-width: 3px;
+  border-style: solid;
+  border-image: initial;
+  animation: circleSpinner 1s linear 0s infinite normal none running;
+}
+.spinner-dark {
+  margin: 50px auto;
+  width: 30px;
+  height: 30px;
+  border-color: navy rgb(232, 232, 253) rgb(232, 232, 253);
+}
+.spinner-light {
+  width: 30px;
+  height: 30px;
+  border-color: #fff rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.5);
+}
+.placeholder-lg, .image-cover-lg {
+  width: 80px;
+  height: 80px;
+}
+.map-search {
+  left: 15%;
+  width: 70%;
+}
+.map-search, .map-fit {
+  z-index: 1;
+  margin: 10px 0;
+}
+.map-fit {
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+.map-search input {
+  background-color: rgba(255,255,255,0.9);
+  border: 0;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+  padding: 22px 18px;
+}
+.map-search input:focus {
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), 0 -1px 0px rgba(0,0,0,0.02) !important;
+  border: 0 !important;
+  background-color: rgba(255,255,255,1) !important;
+}
